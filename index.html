@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>index of html</title>
+  <link rel="shortcut icon" href="mybike.jpg" type="image/jpg"> <!--this is favicon that creates a logo for our website--> 
+</head>
+<body>
+
+    <div><table><th colspan="2">welcome to html</th></table></div>
+    <div 
+    id="top">Html part 2
+   
+    <a href="#bottom">go to bottom</a>
+</div>
+
+<th><img src="tech.jpg"width="500"></th>
+<table border="1" width="100%">
+      <tr><!--table row-->
+          <td>cell </td><!--table data cell-->
+          <td>cell2</td>
+      </tr>                  <!--table: it creates a table and we can define the width of it.-->
+      <tr>
+          <td>cell 1.1</td>
+          <td>cell 2.1</td>
+      </tr>
+
+
+
+</table>
+<table border="1" width="100%">
+
+<tbody>
+    <tr>
+        <th colspan="2">welcome to student login</th>
+        <!--<td>sanjay</td>
+        <td>hello</td>-->
+    </tr>
+    <tr>
+
+        <td rowspan="1" width="50%">
+        
+        
+            <h1>your name: </h1> </td>
+        
+        </tr>
+        <td>
+            <h2>roll No: </h2>
+        </td>
+
+</table>
+</tbody>
+<!--how to create a class-->
+<style>  
+        .classNameHere{
+
+            padding: 10px;      
+            color:aliceblue;  
+            background-color:black;
+        }
+        .uppercase{
+            text-transform: uppercase;
+        }
+        #testingId{
+            border: 5px solid red;
+        }
+</style>
+<!--access the class using class attribute in the attribute classNameHere is the class name inside double quotes-->
+<div class= "classNameHere uppercase">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, corporis architecto minima exercitationem ut officia aspernatur nostrum ad ratione? Optio est asperiores veniam repellendus et placeat tempora facilis vitae ullam.</p>
+</div>
+<div id="testingId"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, corporis architecto minima exercitationem ut officia aspernatur nostrum ad ratione? Optio est asperiores veniam repellendus et placeat tempora facilis vitae ullam.</p>
+</div>
+<div class= classNameHere>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, corporis architecto minima exercitationem ut officia aspernatur nostrum ad ratione? Optio est asperiores veniam repellendus et placeat tempora facilis vitae ullam.</p>
+</div>
+<h1>code formatting</h1>
+<pre>
+It is white case sensitive
+If we write our code in next line it will print in next line.
+</pre>
+<p>
+    <code>if we want to print a font like pre tag </code>
+</p>
+<h2>HTML entities</h2>
+<b>this is bold. this can bold the letters for us</b>
+<div>&lt;b&gt;this is bold&lt;/b&gt;</div>
+<h3>for copyrights</h3>
+<b>
+    &copy;2022
+    <sup>&copy</sup>2022
+    <sub>&copy</sub>2022
+</b>
+<h4>forms</h4>
+<form action='website_for_free.html' method="get">
+    <div>
+
+   <input required type="email" value="email" placeholder="Enter your email"> <br>
+   <input required name="password" type="password" value="steve" placeholder="Enter your password">
+   <button type="submit">click me</button> 
+
+</div>  
+ <div>
+    <textarea required name="address" cols="50" rows="10">
+white case matters here.        
+so be careful while typing.
+    </textarea>
+    <button type="submit">submit</button> <!--it will automatically enters the default passwords like steve-->
+</div>
+    <div>
+
+    <select required name="selected_option">
+         <option value="" disabled="disabled"> 
+             -disbaled-
+          </option>
+        <option value="value1">this is value 1</option>
+        <option value="value1">this is value 2</option>
+        <option value="value1">this is value 3</option>
+        <option value="value1">this is value 4<option>
+            <option value="selected_by_default" selected="selected">default value</option>
+    </select>
+ </div>
+    
+   </form>
+  <h1>embed</h1>
+  <div>                   <!--embed is actually works for iframe to share videos in our page-->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/O5u3v3eRQ14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+  <div id="bottom">
+    <a href="#top">go to top</a>         <!--this is used for scroll top to bottom.-->
+</div>
+    
+</body>
+</html>

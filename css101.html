@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>css 101</title>
+</head>
+<!--below is the syntax for css-->
+    <style>
+        h1 {
+            color:black;    /*we can call the h1 as a selector name */
+        }
+        body{
+            background-color: darkcyan;     /*we can also call the body and perform anything in it.*/
+            color: aliceblue;
+        }
+        p{
+            text-tranform: uppercase;
+            color:black;
+        }
+        .uppercase{                              /*we are calling class attribute in this line class is denoted as .  */
+           text-transform: uppercase;
+        }
+        .red{
+            color:brown;
+        }
+        #title-text                               /*id are denoted as # symbol*/       
+        {
+            text-decoration: underline;
+        }
+        #title-text1
+        {
+            text-decoration-line: overline;
+        }
+        h3,h4{
+            background-color:blueviolet;          /*we can also call more than one selectors and perform same task.*/                
+        }
+         div p{
+             color:chartreuse;       /*we are calling nested selectors */
+         }                   
+    </style>
+    <!--above example is for class ,class is denoted as . in css -->
+<body><!--this are inline css-->
+    <h1 style="font-size: 20px">css is beautiful</h1>
+    <h1 style="font-size: 30px" id="title-text1">Hello world</h1>
+    <h3 style="">this is class 1</h3>  <!--we can also call two selectors  at a time.-->
+    <h4 style="">this is class 2</h4>
+    <div class="red uppercase" id="title-text">this is a div element</div>
+     <!--every ids name must be different -->
+    <h2 class="red">select me to</h2>
+    <p class="uppercase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eligendi quibusdam, nulla deserunt, reprehenderit mollitia quas velit obcaecati, susnt eaque repudiandae! Veritatis, ipsa. Quam vitae quod reprehenderit autem sapiente facilis.</p>
+    <p>this is a paragraph so kindly focus on it hello </p>
+    <strong>
+        this is a bold element.
+    </strong>
+
+<!--we are calling the nested selectors like div inside p , then we can make changes in paragraphs-->
+    <h1>Nested elements using css</h1>
+     <div>
+         <p>
+             please change my color.
+         </p>
+     </div>
+     <p>dont change my color.</p>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>css 101 part4</title>
+</head>
+
+<style>
+    span.half_width{ /*if we use span selector we must use diplay: inline-block.*/
+        
+        width: 200px;
+        height:200px;
+        border: 2px solid black;
+        display: inline-block;/*without this line this is not goona work.*/
+    }
+    
+    div#leaf{
+        width:200px;
+        height:200px;
+        border:2px solid #000000;
+        background-image:url(css.jpg);
+        background-size:cover;
+        background-position: center center;
+        border-radius: 0 50% 0 50%;
+        box-shadow: 12px 12px 20px inset palevioletred;
+                  /* x    y   blur  inset     color*/
+    }
+    h1#padding{
+        width: 300px;
+        height:300px;
+        border: 2px dashed darkolivegreen;
+        padding: 20px 30px 25px 30px;
+        margin: 20px auto 25px auto;
+        /*margin: 20px 30px 25px 30px    the we can give fixer size for the margin.*/;
+        /*margin: auto;     we can auto set for margins it moves to the center.*/
+        display:  inline-block;
+/*it goes like   top  right bottom right*/
+    }
+    #max-width{
+        border: 2px solid black;
+        max-width: 500px;                  /*This will extends the line for us with border*/
+    }
+</style>
+<body>
+    <span class="half_width">this is half-width</span>
+    <div id="leaf"></div>
+    <h1 id="padding">this is padding</h1>
+    <h2 id="max-width">max width</h2>
+
+</body>
+</html>

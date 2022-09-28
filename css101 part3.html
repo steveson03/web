@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background image</title>
+</head>
+<style>
+h1#text{
+        text-align:center;
+        color:#ffffff;
+    }   /*text alignment*/
+    body{
+        background-color: #000000;
+    }
+div#red{
+    color:aliceblue;
+    background-image: url("css.jpg");
+    background-repeat:no-repeat;        /*inserting image into our page*/
+    background-size:contain;
+    background-position:center;
+    height:40em;
+}
+h2.red_border{
+    text-align:center;
+    color:#ffffff;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ff0000;           /*actual border sytax.*/
+    border-radius: 50%;
+    /*width:500px;
+    height:500px;*/
+}
+h3.blue-border{
+    color:#ffffff;
+    border-width:15px;
+    border-style:solid;
+    border-color:blue;
+    border-top-left-radius: 5px;      /*borders and doing some shapes on it.*/
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 50%;
+    width:200px;
+    height:200px;
+}
+div.helloworld{
+    color: #ffffff;
+    display:inline-block; /*if we use only inline then it prints next  next but if we give inline-block it gives the actual width and height */
+    border: 2px solid yellow;
+    width: 500px;
+    height: 50px;
+
+    text-align: right;
+}
+
+</style>
+<body>
+    <h1 id="text">Hello Is there anybody</h1>
+    <h2 class="red_border">please login</h2>
+    <h3 class="blue-border">this is a shape</h3>
+    <div class="helloworld">
+        this are block elements
+    </div>
+    <div class="helloworld">
+        Hello there!
+    </div>
+<div id="red">hello there</div>
+
+</body>
+</html>
